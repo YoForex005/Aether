@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="description" content="Advanced AI Bot Assistant - Your Intelligent Digital Companion">
+    <title>NEXUS | AI Bot Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="28" height="28" rx="6" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="11" cy="14" r="3" fill="currentColor"/>
+                    <circle cx="21" cy="14" r="3" fill="currentColor"/>
+                    <path d="M10 22C10 22 12 24 16 24C20 24 22 22 22 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="16" y1="6" x2="16" y2="2" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="16" cy="2" r="2" fill="currentColor"/>
+                </svg>
+                <span class="logo-text">NEXUS</span>
+            </div>
+            <nav class="nav">
+                <button class="nav-btn" aria-label="Menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <!-- Animated Bot Avatar -->
+            <div class="bot-avatar">
+                <svg class="bot-svg" width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Outer ring -->
+                    <circle class="bot-ring-outer" cx="90" cy="90" r="85" stroke="url(#gradient1)" stroke-width="2"/>
+                    <circle class="bot-ring-inner" cx="90" cy="90" r="70" stroke="url(#gradient1)" stroke-width="1" stroke-dasharray="8 4"/>
+                    
+                    <!-- Bot Head -->
+                    <rect class="bot-head" x="45" y="40" width="90" height="80" rx="16" fill="#0a0a0a" stroke="url(#gradient1)" stroke-width="2"/>
+                    
+                    <!-- Eyes -->
+                    <g class="bot-eyes">
+                        <rect class="bot-eye" x="58" y="60" width="24" height="12" rx="3" fill="#00f0ff"/>
+                        <rect class="bot-eye" x="98" y="60" width="24" height="12" rx="3" fill="#00f0ff"/>
+                    </g>
+                    
+                    <!-- Mouth/Speaker -->
+                    <g class="bot-mouth">
+                        <rect x="65" y="90" width="50" height="4" rx="2" fill="#333"/>
+                        <rect x="65" y="98" width="50" height="4" rx="2" fill="#333"/>
+                        <rect x="65" y="106" width="50" height="4" rx="2" fill="#333"/>
+                    </g>
+                    
+                    <!-- Antenna -->
+                    <line x1="90" y1="40" x2="90" y2="25" stroke="url(#gradient1)" stroke-width="2"/>
+                    <circle class="bot-antenna-light" cx="90" cy="20" r="6" fill="#00f0ff"/>
+                    
+                    <!-- Body connector -->
+                    <rect x="75" y="120" width="30" height="15" rx="4" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+                    
+                    <!-- Body -->
+                    <rect x="55" y="135" width="70" height="35" rx="8" fill="#0a0a0a" stroke="url(#gradient1)" stroke-width="2"/>
+                    
+                    <!-- Body details -->
+                    <circle cx="75" cy="152" r="4" fill="#00f0ff" class="bot-pulse"/>
+                    <circle cx="90" cy="152" r="4" fill="#00f0ff" class="bot-pulse" style="animation-delay: 0.2s"/>
+                    <circle cx="105" cy="152" r="4" fill="#00f0ff" class="bot-pulse" style="animation-delay: 0.4s"/>
+                    
+                    <defs>
+                        <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#00f0ff"/>
+                            <stop offset="100%" stop-color="#0080ff"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="bot-glow"></div>
+            </div>
+            
+            <div class="hero-text">
+                <p class="hero-tagline">ADVANCED AI SYSTEM</p>
+                <h1 class="hero-title">Intelligent<br/>Bot Assistant</h1>
+                <p class="hero-description">Next-generation artificial intelligence designed for seamless human interaction and complex task automation.</p>
+            </div>
+            
+            <div class="hero-actions">
+                <button class="btn btn-primary">
+                    <span>Initialize</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="btn btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M8 7L13 10L8 13V7Z" fill="currentColor"/>
+                    </svg>
+                    <span>Watch Demo</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Scan line effect -->
+        <div class="scan-line"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="section-header">
+            <span class="section-tag">CAPABILITIES</span>
+            <h2 class="section-title">Core Functions</h2>
+        </div>
+        
+        <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 4L36 12V28L20 36L4 28V12L20 4Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M20 4V20M20 20L36 12M20 20L4 12M20 20V36" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.5"/>
+                        <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Neural Processing</h3>
+                <p class="feature-desc">Advanced neural networks for real-time data analysis and pattern recognition.</p>
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="4" y="8" width="32" height="24" rx="3" stroke="currentColor" stroke-width="2"/>
+                        <path d="M10 16H18M10 22H14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="28" cy="20" r="6" stroke="currentColor" stroke-width="2"/>
+                        <path d="M26 20L28 22L31 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Task Automation</h3>
+                <p class="feature-desc">Automate complex workflows with intelligent scheduling and execution.</p>
+            </div>
+            
+            <!-- Feature 3 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 6C12.268 6 6 12.268 6 20C6 27.732 12.268 34 20 34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M20 6C27.732 6 34 12.268 34 20C34 27.732 27.732 34 20 34" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4"/>
+                        <path d="M14 20L18 24L26 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Secure Protocol</h3>
+                <p class="feature-desc">Military-grade encryption ensures complete data privacy and security.</p>
+            </div>
+            
+            <!-- Feature 4 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="12" r="6" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="10" cy="28" r="5" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="30" cy="28" r="5" stroke="currentColor" stroke-width="2"/>
+                        <line x1="17" y1="17" x2="12" y2="24" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="23" y1="17" x2="28" y2="24" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Multi-Agent Sync</h3>
+                <p class="feature-desc">Coordinate multiple AI agents for distributed task management.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-value">99.9<span class="stat-unit">%</span></span>
+                <span class="stat-label">Uptime</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">0.3<span class="stat-unit">ms</span></span>
+                <span class="stat-label">Response</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">10<span class="stat-unit">M+</span></span>
+                <span class="stat-label">Queries</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-content">
+            <div class="cta-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+                    <path d="M24 14V24L30 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="24" cy="24" r="3" fill="currentColor"/>
+                </svg>
+            </div>
+            <h2 class="cta-title">Ready to Begin</h2>
+            <p class="cta-desc">Initialize your personal AI assistant and experience the future of digital interaction.</p>
+            <button class="btn btn-primary btn-lg">
+                <span>Start Now</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="28" height="28" rx="6" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="11" cy="14" r="3" fill="currentColor"/>
+                    <circle cx="21" cy="14" r="3" fill="currentColor"/>
+                    <path d="M10 22C10 22 12 24 16 24C20 24 22 22 22 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span>NEXUS</span>
+            </div>
+            <p class="footer-text">Advanced Artificial Intelligence System</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Terms</a>
+                <a href="#" class="footer-link">Contact</a>
+            </div>
+            <p class="footer-copyright">Version 2.0.1 | System Online</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -366,7 +366,7 @@ const WelcomeScreen = ({ onLogin, onSignup }: { onLogin: () => void; onSignup: (
 
 // ============ LOGIN SCREEN ============
 const LoginScreen = ({ onBack, onLogin, onSignup }: { onBack: () => void; onLogin: () => void; onSignup: () => void }) => {
-  const { colors } = useTheme();
+  const { colors, isDark } = useTheme();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
@@ -475,7 +475,7 @@ const LoginScreen = ({ onBack, onLogin, onSignup }: { onBack: () => void; onLogi
 
 // ============ SIGNUP SCREEN ============
 const SignupScreen = ({ onBack, onSignup, onLogin }: { onBack: () => void; onSignup: () => void; onLogin: () => void }) => {
-  const { colors } = useTheme();
+  const { colors, isDark } = useTheme();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -809,7 +809,7 @@ const HomeScreen = ({ kycStatus, onNavigate }: { kycStatus: string; onNavigate: 
 
 // ============ PLACEHOLDER SCREEN ============
 const PlaceholderScreen = ({ title, subtitle, onBack }: { title: string; subtitle: string; onBack: () => void }) => {
-  const { colors } = useTheme();
+  const { colors, isDark } = useTheme();
   return (
     <Layout style={{ alignItems: 'center', justifyContent: 'center', paddingHorizontal: 32 }}>
       <TouchableOpacity onPress={onBack} style={{ position: 'absolute', top: 50, left: 16 }}>
@@ -833,7 +833,7 @@ const PlaceholderScreen = ({ title, subtitle, onBack }: { title: string; subtitl
 
 // ============ DEPOSIT SCREEN ============
 const DepositScreen = ({ onNavigate }: { onNavigate: (s: Screen) => void }) => {
-  const { colors } = useTheme();
+  const { colors, isDark } = useTheme();
   const [selectedNetwork, setSelectedNetwork] = useState('trc20');
   const [amount, setAmount] = useState('');
 
@@ -999,7 +999,7 @@ const DepositScreen = ({ onNavigate }: { onNavigate: (s: Screen) => void }) => {
 
 // ============ KYC FORM SCREEN ============
 const KYCFormScreen = ({ kycLevel, onSubmit, onBack, onNavigate }: { kycLevel: number; onSubmit: () => void; onBack: () => void; onNavigate: (s: Screen) => void }) => {
-  const { colors } = useTheme();
+  const { colors, isDark } = useTheme();
   const [name, setName] = useState('');
   const [dob, setDob] = useState('');
   const [country, setCountry] = useState('');
@@ -1508,7 +1508,7 @@ const WalletScreen = ({ kycLevel, onNavigate }: { kycLevel: number; onNavigate: 
 };
 // ============ TRADING HISTORY SCREEN ============
 const TransferScreen = ({ onNavigate }: { onNavigate: (s: Screen) => void }) => {
-  const { colors } = useTheme();
+  const { colors, isDark } = useTheme();
   const [activeTab, setActiveTab] = useState<'active' | 'history'>('active');
 
   // Sample ongoing trades data
@@ -1776,7 +1776,7 @@ const TransferScreen = ({ onNavigate }: { onNavigate: (s: Screen) => void }) => 
 
 // ============ INVESTMENT PLANS SCREEN ============
 const PlansScreen = ({ onNavigate }: { onNavigate: (s: Screen) => void }) => {
-  const { colors } = useTheme();
+  const { colors, isDark } = useTheme();
   const [selectedPlan, setSelectedPlan] = useState<number | null>(null);
   const [botStatus, setBotStatus] = useState<{ [key: number]: boolean }>({
     1: false, 2: true, 3: false, 4: false // Sample: GROWTH plan is active
@@ -2162,7 +2162,7 @@ const PlansScreen = ({ onNavigate }: { onNavigate: (s: Screen) => void }) => {
 
 // ============ WITHDRAWAL SCREEN ============
 const WithdrawScreen = ({ kycStatus, onNavigate }: { kycStatus: string; onNavigate: (s: Screen) => void }) => {
-  const { colors } = useTheme();
+  const { colors, isDark } = useTheme();
   const [selectedNetwork, setSelectedNetwork] = useState('trc20');
   const [amount, setAmount] = useState('');
   const [address, setAddress] = useState('');
@@ -2355,7 +2355,7 @@ const WithdrawScreen = ({ kycStatus, onNavigate }: { kycStatus: string; onNaviga
 
 // ============ PERSONAL DATA SCREEN ============
 const PersonalDataScreen = ({ onNavigate }: { onNavigate: (s: Screen) => void }) => {
-  const { colors } = useTheme();
+  const { colors, isDark } = useTheme();
   const [username, setUsername] = useState('aether_user');
   const [fullName, setFullName] = useState('User Name');
   const [email, setEmail] = useState('user@example.com');
@@ -2486,7 +2486,7 @@ const PersonalDataScreen = ({ onNavigate }: { onNavigate: (s: Screen) => void })
 
 // ============ MT5 ACCOUNT SCREEN ============
 const MT5AccountScreen = ({ kycLevel, onNavigate }: { kycLevel: number; onNavigate: (s: Screen) => void }) => {
-  const { colors } = useTheme();
+  const { colors, isDark } = useTheme();
   const [hasAccount, setHasAccount] = useState(false); // Set to true to show account details
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
