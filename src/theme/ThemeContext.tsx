@@ -5,7 +5,7 @@ export type ThemeMode = 'system' | 'light' | 'dark';
 
 // Light theme colors
 export const lightColors = {
-    background: '#f5f3ff',
+    background: '#30207eff',
     cardDark: '#ffffff',
     cardLight: '#f8f8fc',
     lavender: '#b8a9f4',
