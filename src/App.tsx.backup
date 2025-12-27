@@ -11,26 +11,26 @@ import { AuthProvider, AuthContext } from "./contexts/AuthContext";
 import Toast from "react-native-toast-message";
 
 // Screens
-import SplashScreen from "./screens/onboarding/SplashScreen";
-import WelcomeScreen from "./screens/onboarding/WelcomeScreen";
-import LoginScreen from "./screens/auth/LoginScreen";
-import SignupScreen from "./screens/auth/SignupScreen";
-import HomeScreen from "./screens/main/HomeScreen";
-import KYCFormScreen from "./screens/kyc/KYCFormScreen";
-import WalletScreen from "./screens/main/WalletScreen";
-import TransferScreen from "./screens/transactions/TransferScreen";
-import PlansScreen from "./screens/main/PlansScreen";
-import WithdrawScreen from "./screens/transactions/WithdrawScreen";
-import SettingsScreen from "./screens/settings/SettingsScreen";
-import PersonalDataScreen from "./screens/settings/PersonalDataScreen";
-import DepositScreen from "./screens/transactions/DepositScreen";
-import MT5AccountScreen from "./screens/main/MT5AccountScreen";
-import TradesScreen from "./screens/main/TradesScreen";
-import SecurityScreen from "./screens/settings/SecurityScreen";
-import AccountSettingsScreen from "./screens/settings/AccountSettingsScreen";
-import ForgotPasswordScreen from "./screens/auth/ForgotPasswordScreen";
-import VerifyPasswordScreen from "./screens/auth/VerifyPasswordScreen";
-import ResetPasswordScreen from "./screens/auth/ResetPasswordScreen";
+import SplashScreen from "./screens/SplashScreen";
+import WelcomeScreen from "./screens/WelcomeScreen";
+import LoginScreen from "./screens/LoginScreen";
+import SignupScreen from "./screens/SignupScreen";
+import HomeScreen from "./screens/HomeScreen";
+import KYCFormScreen from "./screens/KYCFormScreen";
+import WalletScreen from "./screens/WalletScreen";
+import TransferScreen from "./screens/TransferScreen";
+import PlansScreen from "./screens/PlansScreen";
+import WithdrawScreen from "./screens/WithdrawScreen";
+import SettingsScreen from "./screens/SettingsScreen";
+import PersonalDataScreen from "./screens/PersonalDataScreen";
+import DepositScreen from "./screens/DepositScreen";
+import MT5AccountScreen from "./screens/MT5AccountScreen";
+import TradesScreen from "./screens/TradesScreen";
+import SecurityScreen from "./screens/SecurityScreen";
+import AccountSettingsScreen from "./screens/AccountSettingsScreen";
+import ForgotPasswordScreen from "./screens/auth_screen/ForgetPasswordScreen";
+import VerifyPasswordScreen from "./screens/auth_screen/VerifyPasswordScreen";
+import ResetPasswordScreen from "./screens/auth_screen/RestPasswordScreen";
 
 // ============ INNER APP (uses AuthContext) ============
 function AppContent() {
