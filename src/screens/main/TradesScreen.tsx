@@ -38,12 +38,15 @@ const TradesScreen = ({ onNavigate }: { onNavigate: (s: Screen) => void }) => {
 
     const activeTrades = trades[activeTab];
 
-    const getTotalProfit = () => {
-        if (activeTab === 'open') {
-            return activeTrades.reduce((acc, trade) => acc + (trade.profit || 0), 0);
-        }
-        return 0;
-    };
+const getTotalProfit = () => {
+    if (activeTab === 'open') {
+        return activeTrades.reduce((acc, trade: any) => {
+            const profit = trade.profit ?? 0;
+            return acc + profit;
+        }, 0);
+    }
+    return 0;
+};
 
     const totalProfit = getTotalProfit();
 

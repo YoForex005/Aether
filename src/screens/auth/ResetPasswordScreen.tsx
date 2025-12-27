@@ -8,7 +8,7 @@ import AnimatedButton from "../../components/common/AnimatedButton";
 import Layout from "../../components/layout/Layout";
 import { AuthContext } from "../../contexts/AuthContext";
 import { resetPasswordService } from "../../services/auth/forgotPassword";
-import { BackIcon, ShieldIcon, LockIcon } from "../../components/icons/Icons";
+import { BackIcon, ShieldIcon, LockIcon, EyeIcon, EyeOffIcon } from "../../components/icons/Icons";
 
 
 type ResetProps = {
@@ -181,11 +181,11 @@ const ResetPasswordScreen: React.FC<ResetProps> = ({ onBack, onDone }) => {
               onChangeText={setNewPass}
             />
             <TouchableOpacity onPress={() => setShowPass(!showPass)}>
-              <Ionicons
-                name={showPass ? "eye-off" : "eye"}
-                size={22}
-                color={colors.gray}
-              />
+              {showPass ? (
+                <EyeOffIcon size={22} color={colors.gray} />
+              ) : (
+                <EyeIcon size={22} color={colors.gray} />
+              )}
             </TouchableOpacity>
           </View>
 
@@ -218,11 +218,11 @@ const ResetPasswordScreen: React.FC<ResetProps> = ({ onBack, onDone }) => {
               onChangeText={setConfirmPass}
             />
             <TouchableOpacity onPress={() => setShowConfirm(!showConfirm)}>
-              <Ionicons
-                name={showConfirm ? "eye-off" : "eye"}
-                size={22}
-                color={colors.gray}
-              />
+              {showConfirm ? (
+                <EyeOffIcon size={22} color={colors.gray} />
+              ) : (
+                <EyeIcon size={22} color={colors.gray} />
+              )}
             </TouchableOpacity>
           </View>
 
