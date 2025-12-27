@@ -114,7 +114,8 @@ type IconProps = {
   color?: string;
 };
 
-export const ChartNavIcon = ({ size = 24, color = colors.gray }: IconProps) => (
+// FIXED: Added active prop support
+export const ChartNavIcon = ({ active = false, size = 24 }: { active?: boolean; size?: number }) => (
   <Svg
     width={size}
     height={size}
@@ -123,7 +124,7 @@ export const ChartNavIcon = ({ size = 24, color = colors.gray }: IconProps) => (
   >
     <Path
       d="M3 3v18h18M7 14l4-4 4 4 5-6"
-      stroke={color}
+      stroke={active ? colors.white : colors.gray}
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -202,6 +203,7 @@ export const MoonIcon = ({ size = 22, color = colors.lavender }: { size?: number
         <Path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
     </Svg>
 );
+
 export const ChartSquareIcon = ({ color = colors.lavender, size = 24 }: { color?: string; size?: number }) => (
     <Svg width={size} height={size} viewBox="0 0 24 24" fill="none">
         <Rect x="3" y="3" width="18" height="18" rx="5" stroke={color} strokeWidth="1.5" fill={color} fillOpacity={0.1} />
